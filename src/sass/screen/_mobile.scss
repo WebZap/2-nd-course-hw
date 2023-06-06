@@ -1,0 +1,58 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 345px/2);
+        padding-right: calc(50% - 345px/2);
+    }
+    .promo{
+        background-image: url(../img/mobile.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 735px;
+        &__inner-wrapp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 238px;
+        }
+        
+    }
+    .title{
+        &_promo{
+            text-align: center;
+            font-size: 2rem;
+            line-height: 2.4375rem;
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+    .descr{
+        &_promo{
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            
+            justify-content: center;
+        }
+    }
+    .btn{
+        width: 234.06px;
+        height: 48.6px;
+        
+    }
+    .card{
+        height: 345px;
+        min-width: 300px;
+        &__wrapp{
+            justify-content: center;
+            // min-height: 965px;
+            gap: 30px;
+        }
+    }
+    .card-block{
+        padding-top: 128px;
+        // min-height: 1220px;
+    }
+}
+

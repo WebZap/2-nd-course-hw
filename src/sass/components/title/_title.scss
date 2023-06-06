@@ -1,0 +1,12 @@
+@use "../../base/colors" as c;
+@use "../../base/fonts" as f;
+.title{
+    color: c.$title-color;
+    @include f.mts;
+    font-weight: 700;
+    &_promo{
+        font-size: 64px;
+        line-height: 78px;
+        margin-bottom: 32px;
+    }
+}

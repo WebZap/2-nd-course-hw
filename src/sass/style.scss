@@ -1,7 +1,4 @@
-@import "base/normilize.scss";
-@import "base/variables";
-//____________________________
-@import "blocks/btn";
-@import "blocks/card";
-@import "blocks/title";
-//____________________________
+@use "./base/index" as index-a;
+@use "./components/index" as index-b;
+@use "./screen/mobile";
+@use "./screen/tablet";

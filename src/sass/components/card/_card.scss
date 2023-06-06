@@ -1,0 +1,35 @@
+@use "../../base/fonts" as f;
+@use "../../base/colors" as c;
+
+.card {
+    max-width: 379px;
+    height: 300px;
+    display: block;
+    position: relative;
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    &__descr {
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+        font-size: 24px;
+        line-height: 32px;
+        @include f.mts;
+        color: c.$descr-color;
+    }
+
+    &__wrapp {
+        gap:30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}

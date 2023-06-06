@@ -1,0 +1,16 @@
+@use "../../base/colors" as c;
+@use "../../base/fonts" as f;
+
+.btn{
+    width: 234.0608px;
+    height: 48.6px;
+    background-color: c.$btn-color;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include f.mts;
+    color: c.$descr-color;
+}
+
+

@@ -1,0 +1,18 @@
+@use "../../base/colors" as c;
+@use "../../base/fonts" as f;
+
+.descr{
+    color: c.$descr-color;
+    @include f.mts;
+    font-weight: 300;
+    &_promo{
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 60px;
+    }
+}
+
+.mark-white{
+    @include f.mark-white;
+    display: inline-flex;
+}

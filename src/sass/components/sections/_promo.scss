@@ -1,0 +1,10 @@
+.promo{
+    background-image: url(../img/wallpaper.png);
+    min-height: 1024px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__inner-wrapp{
+        padding: 220px 0px 0px 0px;
+    }
+}
