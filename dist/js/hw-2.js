@@ -84,7 +84,7 @@
 // };
 
 // user['city of residence'] =  null;
-// user.age = 22;1
+// user.age = 22;
 // delete user['city of residence'];
 
 
