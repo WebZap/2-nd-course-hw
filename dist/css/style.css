@@ -352,6 +352,51 @@ select:focus {
   padding-right: calc(50% - 600px);
 }
 
+@-webkit-keyframes shake-horizontal {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+@keyframes shake-horizontal {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
 .btn {
   width: 234.0608px;
   height: 48.6px;
@@ -369,6 +414,12 @@ select:focus {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: #FFFFFF;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #EB443F;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .card {
@@ -376,6 +427,12 @@ select:focus {
   height: 300px;
   display: block;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border: 3px solid black;
 }
 .card__img {
   width: 100%;
@@ -405,6 +462,12 @@ select:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.card:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
 
 .descr {
   color: #FFFFFF;
@@ -413,6 +476,11 @@ select:focus {
   font-weight: 300;
 }
 .descr_promo {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+.descr_card-years {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 60px;
@@ -438,10 +506,20 @@ select:focus {
   line-height: 78px;
   margin-bottom: 32px;
 }
+.title_card-years {
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 32px;
+}
+
+.section-img {
+  -webkit-animation: shake-horizontal 15s infinite;
+          animation: shake-horizontal 15s infinite;
+}
 
 .promo {
   background-image: url(../img/wallpaper.png);
-  min-height: 1024px;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -454,6 +532,25 @@ select:focus {
   background-color: black;
   padding-top: 128px;
   padding-bottom: 128px;
+}
+
+.card-years {
+  background-color: black;
+  padding-top: 282px;
+  padding-bottom: 282px;
+}
+.card-years__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card-years__inner-wrapp {
+  max-width: 590px;
 }
 
 @media (max-width: 767px) {
@@ -483,6 +580,40 @@ select:focus {
             flex-direction: column;
     padding-top: 238px;
   }
+  .card-years {
+    padding-top: 51px;
+    padding-bottom: 64px;
+  }
+  .card-years__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-years__inner-wrapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .title_promo {
     text-align: center;
     font-size: 2rem;
@@ -494,6 +625,11 @@ select:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .title_card-years {
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+  }
   .descr_promo {
     text-align: center;
     font-size: 14px;
@@ -502,9 +638,18 @@ select:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .descr_card-years {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+    margin-bottom: 32px;
+  }
   .btn {
     width: 234.06px;
     height: 48.6px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .card {
     height: 345px;
@@ -519,10 +664,17 @@ select:focus {
   .card-block {
     padding-top: 128px;
   }
+  .section-img {
+    margin-top: 64px;
+    width: 80%;
+  }
 }
 @media (max-width: 1197px) {
   .center {
     padding-left: calc(50% - 400px);
     padding-right: calc(50% - 400px);
+  }
+  .section-img {
+    margin-top: 50px;
   }
 }

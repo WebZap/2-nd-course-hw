@@ -6,6 +6,12 @@
     height: 300px;
     display: block;
     position: relative;
+    box-sizing: border-box;
+    border-radius: 16px;
+    transition: .4s ease;
+    border: 3px solid black;
+    
+    
 
     &__img{
         width: 100%;
@@ -30,6 +36,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    &:hover{
+        border: 3px solid #44D2FF;
+        border-radius: 16px;
+        transition: .4s ease;
     }
 
 }

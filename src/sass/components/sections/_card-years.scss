@@ -1,0 +1,15 @@
+.card-years{
+    background-color: black;
+    padding-top: 282px;
+    padding-bottom: 282px;
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__inner-wrapp{
+        max-width: 590px;
+        
+    }
+    
+}

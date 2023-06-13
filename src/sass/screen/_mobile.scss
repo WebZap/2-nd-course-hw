@@ -17,6 +17,23 @@
         }
         
     }
+    .card-years{
+        padding-top: 51px;
+        padding-bottom: 64px;
+        &__wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__inner-wrapp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // max-width: none;
+        }
+    }
     .title{
         &_promo{
             text-align: center;
@@ -24,6 +41,13 @@
             line-height: 2.4375rem;
             display: flex;
             justify-content: center;
+        }
+        &_card-years{
+            text-align: center;
+            font-size: 32px;
+            line-height: 39px;
+            
+            
         }
         
     }
@@ -35,10 +59,21 @@
             
             justify-content: center;
         }
+        &_card-years{
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+            margin-bottom: 32px;
+            
+        }
     }
     .btn{
         width: 234.06px;
         height: 48.6px;
+        font-size: 18px;
+        line-height: 22px;
+        
         
     }
     .card{
@@ -54,5 +89,11 @@
         padding-top: 128px;
         // min-height: 1220px;
     }
+
+    .section-img{
+        margin-top: 64px;
+        width: 80%;
+    }
+    
 }
 
