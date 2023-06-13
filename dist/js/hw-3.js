@@ -37,10 +37,10 @@
 
 //!-----4-----!/;
 
-// let a = Number("2");
-// let b = Number("3");
+// let a = "2";
+// let b = "3";
 
-// alert(a + b);
+// alert(Number(a) + Number(b));
 
 //!-----4-----!/;
 
