@@ -1,5 +1,5 @@
 "use strict";
-// let prompt = require("prompt-sync")();
+let prompt = require("prompt-sync")();
 
 //!-----1-----!/;
 
@@ -46,33 +46,33 @@
 
 //!-----5-----!/;
 
-// let month = +prompt("Enter number of month: ");
+let month = +prompt("Enter number of month: ");
 
-// switch (month) {
-//   case 1:
-//   case 2:
-//   case 3:
-//     console.log("This is winter");
-//     break;
-//   case 4:
-//   case 5:
-//   case 6:
-//     console.log("This is spring");
-//     break;
-//   case 7:
-//   case 8:
-//   case 9:
-//     console.log("This is spring");
-//     break;
-//   case 10:
-//   case 11:
-//   case 12:
-//     console.log("This is spring");
-//     break;
-//   default:
-//     console.log("Not exist this month");
-//     break;
-// }
+switch (month) {
+  case 1:
+  case 2:
+  case 3:
+    console.log("This is winter");
+    break;
+  case 4:
+  case 5:
+  case 6:
+    console.log("This is spring");
+    break;
+  case 7:
+  case 8:
+  case 9:
+    console.log("This is spring");
+    break;
+  case 10:
+  case 11:
+  case 12:
+    console.log("This is spring");
+    break;
+  default:
+    console.log("Not exist this month");
+    break;
+}
 
 //!-----5-----!/;
 
