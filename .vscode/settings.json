@@ -16,5 +16,10 @@
   // отключение .map файлов
   "liveSassCompile.settings.generateMap": false,
   //автопрефиксы, -webkit- -moz-..
-  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px",
+  "codesnap.roundedCorners": true,
+  "codesnap.transparentBackground": true,
+  "codesnap.backgroundColor": "#fcfeff",
+  "codesnap.containerPadding": "1em"
 }
