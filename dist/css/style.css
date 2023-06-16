@@ -485,6 +485,11 @@ select:focus {
   line-height: 32px;
   margin-bottom: 60px;
 }
+.descr_remeber-words {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
 
 .mark-white {
   font-family: "Montserrat";
@@ -507,6 +512,11 @@ select:focus {
   margin-bottom: 32px;
 }
 .title_card-years {
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 32px;
+}
+.title_remeber-words {
   font-size: 48px;
   line-height: 59px;
   margin-bottom: 32px;
@@ -550,6 +560,29 @@ select:focus {
           justify-content: space-between;
 }
 .card-years__inner-wrapp {
+  max-width: 590px;
+}
+
+.remember-words {
+  background-color: black;
+  padding-top: 282px;
+  padding-bottom: 282px;
+}
+.remember-words__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.remember-words__inner-wrapp {
   max-width: 590px;
 }
 
