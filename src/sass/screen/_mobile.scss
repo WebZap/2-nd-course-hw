@@ -20,46 +20,38 @@
     .card-years{
         padding-top: 51px;
         padding-bottom: 64px;
-        &__wrap{
+        &__wrap, &__inner-wrapp{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-        }
-        &__inner-wrapp{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            // max-width: none;
         }
     }
+    //Setting all title in project
     .title{
         &_promo{
             text-align: center;
-            font-size: 2rem;
-            line-height: 2.4375rem;
+            font-size: 32px;
+            line-height: 39px;
             display: flex;
             justify-content: center;
         }
-        &_card-years{
+        &_card-years, &_remeber-words{
             text-align: center;
             font-size: 32px;
             line-height: 39px;
-            
-            
         }
         
     }
+    //setitng descr in project
     .descr{
         &_promo{
             text-align: center;
             font-size: 14px;
             line-height: 22px;
-            
             justify-content: center;
         }
-        &_card-years{
+        &_card-years, &_remeber-words{
             text-align: center;
             font-size: 14px;
             line-height: 22px;
@@ -68,34 +60,41 @@
             
         }
     }
+    //settings button
     .btn{
         width: 234.06px;
         height: 48.6px;
         font-size: 18px;
         line-height: 22px;
-        
-        
     }
+    //setting card in list of card-list section
     .card{
         height: 345px;
         min-width: 300px;
         &__wrapp{
             justify-content: center;
-            // min-height: 965px;
             gap: 30px;
         }
     }
+    //setting card wrapp
     .card-block{
         padding-top: 128px;
-        // min-height: 1220px;
     }
-
+    //Setting picture in games card 1 and two
     .section-img{
         margin-top: 64px;
         width: 80%;
     }
     .remember-words{
+        padding-top: 50px;
+        padding-bottom: 120px;
         
+        &__wrap, &__inner-wrapp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
     }
     
 }
