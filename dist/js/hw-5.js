@@ -76,7 +76,7 @@
 //   let secondNumber = +prompt("Введите второе число: ");
 //   let multNum;
 //   if (isNaN(firstNumber) || isNaN(secondNumber)) {
-//     return console.log("Одно или обо значения не являются числом");
+//     return "Одно или обо значения не являются числом";
 //   }
 //   multNum = firstNumber * secondNumber;
 //   console.log(
