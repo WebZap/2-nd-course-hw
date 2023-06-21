@@ -147,10 +147,35 @@
 // circle2.area();
 //!________________________7__________________________!//
 
-// Создайте объекты circle1 и circle2 со свойством
-// radius
-// . У объектов должен быть методам
-// getArea
-//  , которое возвращает площадь круга через радиус, а также
-// getPerimeter
-//  , который возвращает периметр окружности.
+//!________________________7__________________________!//
+
+function giveSeason() {
+  let numberOfSeason = +prompt("Напишите любое число месяца от 1 до 12: ");
+  if (numberOfSeason === 12 || numberOfSeason === 1 || numberOfSeason === 2) {
+    alert("Это зима");
+  } else if (
+    numberOfSeason === 3 ||
+    numberOfSeason === 4 ||
+    numberOfSeason === 5
+  ) {
+    alert("Это вестна");
+  } else if (
+    numberOfSeason === 6 ||
+    numberOfSeason === 7 ||
+    numberOfSeason === 8
+  ) {
+    alert("Это лето");
+  } else if (
+    numberOfSeason === 9 ||
+    numberOfSeason === 10 ||
+    numberOfSeason === 11
+  ) {
+    alert("Это осень");
+  } else {
+    alert("Нет такого числа");
+  }
+}
+
+giveSeason();
+
+//!________________________7__________________________!//
