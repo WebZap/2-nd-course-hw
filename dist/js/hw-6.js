@@ -67,9 +67,48 @@
 
 //9)
 
-let array = [
-  [1, 2, 3],
-  [4, 5, 6],
-];
-let flatArray = array.flat();
-console.log(flatArray);
+// let array = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+// ];
+// let flatArray = array.flat();
+// console.log(flatArray);
+
+// 10)
+// let array = [1, 2, 3, 4, 5, 6, 1, 2];
+// for (let i = 0; i < array.length - 1; i++) {
+//   let resultPlus;
+//   resultPlus = array[i] + array[i + 1];
+//   console.log(resultPlus);
+// }
+
+// 11)
+// let array = [1, 2, 3, 4, 5];
+// function arrayTwo(array) {
+//   let result = array.map((el) => Math.pow(el, 2));
+//   return result;
+// }
+// let arrayMap = arrayTwo(array);
+// console.log(arrayMap);
+// 12)
+// let array = ["слово", "", "слог", "длинное предложение", "буква"];
+// function getLengthWords(params) {
+//   let resultArray = [];
+//   array.map((el) => {
+//     resultArray.push(el.length);
+//   });
+//   console.log(resultArray);
+//   return resultArray;
+// }
+
+// getLengthWords(array);
+// 13)
+// let array = [-1, 0, 5, -10, 56];
+// function filterPositive(arrayInput) {
+//   let filterArray = arrayInput.filter((el) => el < 0);
+//   console.log(filterArray);
+//   return filterArray;
+// }
+
+// filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
+// filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2
