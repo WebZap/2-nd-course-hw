@@ -137,3 +137,15 @@
 // }
 
 // giveArrEvAll();
+
+// 15)
+let array = [];
+let arraySum = 0;
+let arrayMiddle = 0;
+for (let i = 0; i < 10; i++) {
+  array.push(Math.round(Math.random() * 10));
+}
+arraySum = array.reduce((a, b) => a + b);
+arrayMiddle = arraySum / array.length;
+console.log(arraySum);
+console.log(arrayMiddle);
