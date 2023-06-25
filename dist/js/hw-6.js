@@ -115,15 +115,6 @@
 
 //
 
-// Задание 15
-// Создайте массив, состоящий из 6 элементов. Элементы массива необходимо сгенерировать с помощью
-// Math.random()
-//  в диапазоне от 1 до 10.
-
-// Требуется найти среднее арифметическое этих цифр, результат программы вывести в консоль.
-
-// Для получения среднего арифметического необходимо все значения массива сложить и разделить на количество элементов в массиве.
-
 // 14)
 // function giveArrEvAll() {
 //   let arrRandom = [];
@@ -139,13 +130,13 @@
 // giveArrEvAll();
 
 // 15)
-let array = [];
-let arraySum = 0;
-let arrayMiddle = 0;
-for (let i = 0; i < 10; i++) {
-  array.push(Math.round(Math.random() * 10));
-}
-arraySum = array.reduce((a, b) => a + b);
-arrayMiddle = arraySum / array.length;
-console.log(arraySum);
-console.log(arrayMiddle);
+// let array = [];
+// let arraySum = 0;
+// let arrayMiddle = 0;
+// for (let i = 0; i < 10; i++) {
+//   array.push(Math.round(Math.random() * 10));
+// }
+// arraySum = array.reduce((a, b) => a + b);
+// arrayMiddle = arraySum / array.length;
+// console.log(arraySum);
+// console.log(arrayMiddle);
