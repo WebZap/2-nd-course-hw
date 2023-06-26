@@ -40,18 +40,37 @@
 
 // 4)
 
-arr.sort(function (a, b) {
-  // ASC  -> a.length - b.length
-  // DESC -> b.length - a.length
-  return b.length - a.length;
-});
+// arr.sort(function (a, b) {
+//   // ASC  -> a.length - b.length
+//   // DESC -> b.length - a.length
+//   return b.length - a.length;
+// });
 
-function sortByLength(array) {
-  let arrayTop = array.sort(function (a, b) {
-    return a.length - b.length;
-  });
-  console.log(arrayTop);
-  return arrayTop;
+// function sortByLength(array) {
+//   let arrayTop = array.sort(function (a, b) {
+//     return a.length - b.length;
+//   });
+//   console.log(arrayTop);
+//   return arrayTop;
+// }
+
+// sortByLength(["Beg", "Life", "I", "To"]);
+
+// 5)
+function sumMul(n, m) {
+  let array = [];
+  let sumEven = 0;
+  for (let i = n; i <= m; i++) {
+    array.push(i);
+  }
+  let filterEven = array.filter((el) => el % 2 === 0);
+  for (let i = 0; i < filterEven.length; i++) {
+    sumEven += filterEven[i];
+    console.log(sumEven);
+  }
+  console.log(sumEven);
+  console.log(array);
+  console.log(filterEven);
 }
 
-sortByLength(["Beg", "Life", "I", "To"]);
+sumMul(3, 13);
