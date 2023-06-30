@@ -151,24 +151,20 @@ function shuffleElemnts() {
   let secondItem = prompt("Чему равнялся второй элемент массива?");
   secondItem = secondItem.toLowerCase();
   firstItem = firstItem.toLowerCase();
-  for (let i = 0; i < randomArray.length; i++) {
-    if (
-      firstItem === randomArray[0] &&
-      secondItem === randomArray[randomArray.length - 1]
-    ) {
-      alert(`Вы правильно сказали!`);
-      break;
-    } else if (
-      (firstItem !== randomArray[0] &&
-        secondItem === randomArray[randomArray.length - 1]) ||
-      (firstItem === randomArray[0] &&
-        secondItem !== randomArray[randomArray.length - 1])
-    ) {
-      alert(`была бы победа`);
-      break;
-    } else {
-      alert(`Все неверно!`);
-      break;
-    }
+
+  if (
+    firstItem === randomArray[0] &&
+    secondItem === randomArray[randomArray.length - 1]
+  ) {
+    alert(`Вы правильно сказали!`);
+  } else if (
+    (firstItem !== randomArray[0] &&
+      secondItem === randomArray[randomArray.length - 1]) ||
+    (firstItem === randomArray[0] &&
+      secondItem !== randomArray[randomArray.length - 1])
+  ) {
+    alert(`была бы победа`);
+  } else {
+    alert(`Все неверно!`);
   }
 }
