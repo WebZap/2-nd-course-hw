@@ -152,12 +152,17 @@ function shuffleElemnts() {
   secondItem = secondItem.toLowerCase();
   firstItem = firstItem.toLowerCase();
   for (let i = 0; i < randomArray.length; i++) {
-    if (firstItem === randomArray[i] && secondItem === randomArray[i + 1]) {
+    if (
+      firstItem === randomArray[0] &&
+      secondItem === randomArray[randomArray.length - 1]
+    ) {
       alert(`Вы правильно сказали!`);
       break;
     } else if (
-      (firstItem !== randomArray[i] && secondItem === randomArray[i + 1]) ||
-      (firstItem === randomArray[i] && secondItem !== randomArray[i + 1])
+      (firstItem !== randomArray[0] &&
+        secondItem === randomArray[randomArray.length - 1]) ||
+      (firstItem === randomArray[0] &&
+        secondItem !== randomArray[randomArray.length - 1])
     ) {
       alert(`была бы победа`);
       break;
