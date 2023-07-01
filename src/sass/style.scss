@@ -1,4 +1,6 @@
 @use "./base/index" as index-a;
 @use "./components/index" as index-b;
-@use "./screen/mobile";
 @use "./screen/tablet";
+@use "./screen/mobile";
+
+

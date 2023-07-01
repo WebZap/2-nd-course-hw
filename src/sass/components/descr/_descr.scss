@@ -5,17 +5,7 @@
     color: c.$descr-color;
     @include f.mts;
     font-weight: 300;
-    &_promo{
-        font-size: 18px;
-        line-height: 32px;
-        margin-bottom: 60px;
-    }
-    &_card-years{
-        font-size: 18px;
-        line-height: 32px;
-        margin-bottom: 60px;
-    }
-    &_remeber-words{
+    &_promo, &_game-puzzle,  &_card-years, &_remeber-words{
         font-size: 18px;
         line-height: 32px;
         margin-bottom: 60px;

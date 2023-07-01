@@ -475,17 +475,7 @@ select:focus {
   font-style: normal;
   font-weight: 300;
 }
-.descr_promo {
-  font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 60px;
-}
-.descr_card-years {
-  font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 60px;
-}
-.descr_remeber-words {
+.descr_promo, .descr_game-puzzle, .descr_card-years, .descr_remeber-words {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 60px;
@@ -511,12 +501,7 @@ select:focus {
   line-height: 78px;
   margin-bottom: 32px;
 }
-.title_card-years {
-  font-size: 48px;
-  line-height: 59px;
-  margin-bottom: 32px;
-}
-.title_remeber-words {
+.title_card-years, .title_remeber-words, .title_game-puzzle {
   font-size: 48px;
   line-height: 59px;
   margin-bottom: 32px;
@@ -586,7 +571,46 @@ select:focus {
   max-width: 590px;
 }
 
-@media (max-width: 767px) {
+.game-puzzle {
+  background-image: url(../img/unsplash_iO0I6-mhDEY.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.game-puzzle__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1197px) {
+  .center {
+    padding-left: calc(50% - 400px);
+    padding-right: calc(50% - 400px);
+  }
+  .section-img {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 756px) and (min-width: 354px) {
   .center {
     padding-left: calc(50% - 172.5px);
     padding-right: calc(50% - 172.5px);
@@ -643,7 +667,7 @@ select:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .title_card-years, .title_remeber-words {
+  .title_card-years, .title_remeber-words, .title_game-puzzle {
     text-align: center;
     font-size: 32px;
     line-height: 39px;
@@ -656,7 +680,7 @@ select:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .descr_card-years, .descr_remeber-words {
+  .descr_card-years, .descr_remeber-words, .descr_game-puzzle {
     text-align: center;
     font-size: 14px;
     line-height: 22px;
@@ -704,14 +728,5 @@ select:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media (max-width: 1197px) {
-  .center {
-    padding-left: calc(50% - 400px);
-    padding-right: calc(50% - 400px);
-  }
-  .section-img {
-    margin-top: 50px;
   }
 }
